@@ -5,10 +5,8 @@ bash scripts/build.sh
 ```
 *Press "yes" to create sqlite db*
 
-To run: 
-```
-php artisan serve
-```
+For testing, you can use Postman (but don't forget add header Accept: application/json) 
+or test it using test_check_response method from Unit test (MultiplicationTableControllerTest)
 
 **1. `MultiplicationTableController`:**
 

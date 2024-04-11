@@ -62,4 +62,14 @@ class MultiplicationTableControllerTest extends TestCase
         $response->assertStatus(200);
         $response->assertContent($expectedResponseValue);
     }
+
+    public function test_check_response(): void
+    {
+        $response = $this->get('table?size=' . 10);
+//         to check successful responses
+//        dump($response->getContent());
+//         to check exception message
+//        dump($response->exception->getMessage());
+        $this->assertTrue(true);
+    }
 }
